@@ -1,0 +1,13 @@
+import math
+a = float(input("Введите значение a: "))
+b = float(input("Введите значение b: "))
+h = float(input("Введите шаг h: "))
+
+sum_of_values = 0
+
+for x in [i for i in range(int(a), int(b)+1, int(h))]:
+   
+    fx = math.sqrt(1 + 2*x + 3*x**2)
+    sum_of_values += fx  
+
+print(f"Сумма значений функции на интервале от a до b с шагом h равна: sum_of_values")
